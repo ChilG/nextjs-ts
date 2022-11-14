@@ -35,7 +35,7 @@ export default function Clock(
       const hours = time.hours()
       const minute = time.minute()
       const second = time.second()
-      const hourDeg = ((hours / 24) * 360).toString()
+      const hourDeg = ((hours / 12) * 360).toString()
       const minuteDeg = ((minute / 60) * 360).toString()
       const secondDeg = ((second / 60) * 360).toString()
       setHourDegree(parseInt(hourDeg))
